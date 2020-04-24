@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pra-jm-gNN">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ExampleViewController" customModule="MzTableView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QNS-Ts-hWD">
+                                <rect key="frame" x="0.0" y="44" width="375" height="563"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSW-tq-QI1">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aaz-n8-RD0"/>
+                                </constraints>
+                                <state key="normal" title="Add New Cells"/>
+                                <connections>
+                                    <action selector="addNewItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AgJ-RS-aGp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZSW-tq-QI1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="25k-yc-ild"/>
+                            <constraint firstItem="QNS-Ts-hWD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="BZZ-2f-4Gv"/>
+                            <constraint firstItem="ZSW-tq-QI1" firstAttribute="top" secondItem="QNS-Ts-hWD" secondAttribute="bottom" id="T2n-gW-I0x"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSW-tq-QI1" secondAttribute="trailing" id="cFK-1I-e1d"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZSW-tq-QI1" secondAttribute="bottom" id="qLS-ZL-k4e"/>
+                            <constraint firstAttribute="trailing" secondItem="QNS-Ts-hWD" secondAttribute="trailing" id="uhq-7y-Gq9"/>
+                            <constraint firstItem="QNS-Ts-hWD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="wdI-Ch-5FQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vs5-7A-ps9"/>
+                    <connections>
+                        <outlet property="exampleTableView" destination="QNS-Ts-hWD" id="8ov-Qt-bGV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KI0-3d-hhF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pra-jm-gNN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S15-0b-pK9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="C51-dc-Enq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApE-S1-weN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

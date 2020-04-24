@@ -1,0 +1,22 @@
+{
+  "name": "MzTableView",
+  "version": "0.1.0",
+  "summary": "A short description of MzTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mohammadz74/MzTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mohammadz74": "mohammad_z74@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/mohammadz74/MzTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MzTableView/Classes/**/*"
+}

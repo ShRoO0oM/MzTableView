@@ -1,0 +1,16 @@
+PODS:
+  - MzTableView (0.1.0)
+
+DEPENDENCIES:
+  - MzTableView (from `../`)
+
+EXTERNAL SOURCES:
+  MzTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MzTableView: 4141bdc2651c5e82d1539b002d289b055dfb18b5
+
+PODFILE CHECKSUM: 61d945cf449e77c4ce7f44c24b9fa70817662bb0
+
+COCOAPODS: 1.9.1

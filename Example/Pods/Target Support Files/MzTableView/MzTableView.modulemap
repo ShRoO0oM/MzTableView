@@ -1,0 +1,6 @@
+framework module MzTableView {
+  umbrella header "MzTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

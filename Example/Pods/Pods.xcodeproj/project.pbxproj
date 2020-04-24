@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04753E9426F7616F9A577884690C0F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		13F72BA812B98A854E94F10397E044B6 /* Pods-MzTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A14A90DF9E1F495ACC56AD3F24C331 /* Pods-MzTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		352503DEE4F3FE43B32B8E4DC5934210 /* Pods-MzTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4EB4942296E8FEA5D7F3FF5B36FECA /* Pods-MzTableView_Tests-dummy.m */; };
+		4DA176AEAE19A16F1F4AAF8020A8DDA5 /* Pods-MzTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07429B03F46EFC7C28A8B77A3BBAE8B7 /* Pods-MzTableView_Example-dummy.m */; };
+		5D62E61E6C0FE0C420CFF256770759BD /* MzTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1E8B96690E5570F305ABCD07F1523 /* MzTableViewDataSource.swift */; };
+		8F2B179C73B8414EACCFAA81CE910519 /* MzTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3005806A63794A39B816DDE1D4E0F4 /* MzTableView-dummy.m */; };
+		9B1FAC7BEA26A7A1E783BEC5690C7B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BF36E0135F4B426A9DA60C3762AF3B79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C59CE613867A9B4BCB5DD54281C4880B /* MzTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4632C82B8C789D5F8B51E58D975595C4 /* MzTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F332DB032451D63200936118 /* MzTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332DB022451D63200936118 /* MzTableViewCell.swift */; };
+		F37161B22452C891006A501F /* CellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37161B12452C891006A501F /* CellAnimator.swift */; };
+		F920AD83604C30C5CB8FD8BF4905261A /* Pods-MzTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D794F2E21CAA832C4FF5B5BBDB8B52 /* Pods-MzTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1250762394A0C9EB8F8E0D60BD1B66B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A4347485FBE7B35A495751682CAEBCB;
+			remoteInfo = "Pods-MzTableView_Example";
+		};
+		D9BA18FFC333BC9640A1AF3BDD710F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082E8CAC23997B89CD9447F14716519A;
+			remoteInfo = MzTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010B1A4A2A799C5AB2F3DB82378CDE52 /* MzTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MzTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07429B03F46EFC7C28A8B77A3BBAE8B7 /* Pods-MzTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MzTableView_Example-dummy.m"; sourceTree = "<group>"; };
+		0E123FFDFEEAA10E625E90CF95FA2F40 /* Pods-MzTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MzTableView_Tests.modulemap"; sourceTree = "<group>"; };
+		1D6F8B4FEFAC501D1B626C0DB2167F98 /* MzTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MzTableView.release.xcconfig; sourceTree = "<group>"; };
+		1E4EB4942296E8FEA5D7F3FF5B36FECA /* Pods-MzTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MzTableView_Tests-dummy.m"; sourceTree = "<group>"; };
+		21473A4F4D9D38D25C12E0C6BA07C869 /* MzTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MzTableView.debug.xcconfig; sourceTree = "<group>"; };
+		2B98E5F146167DBEA1FFEAB8D1CD8E46 /* Pods-MzTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MzTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		332444E6ED2797E13AE739698859E192 /* MzTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MzTableView.modulemap; sourceTree = "<group>"; };
+		3DA6C68A9946AC215DB20528D76B23EA /* Pods-MzTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MzTableView_Example.modulemap"; sourceTree = "<group>"; };
+		40C0112AD57A659FB925AF924B341BAA /* Pods-MzTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MzTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		40D97DE9B6B7934CC747DEB67DC4DABF /* Pods-MzTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MzTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4632C82B8C789D5F8B51E58D975595C4 /* MzTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MzTableView-umbrella.h"; sourceTree = "<group>"; };
+		4DC708B61943B1411E45F4DEB2D9DECD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4F8DC9BEEBBD4A53E5BA6422B333C4D4 /* Pods-MzTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MzTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		55A3782D841B93B4698F7515DF6C795E /* MzTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MzTableView-prefix.pch"; sourceTree = "<group>"; };
+		5D5EAD1A79BD37BD44729BB8474E96C5 /* Pods-MzTableView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MzTableView_Tests-Info.plist"; sourceTree = "<group>"; };
+		7AE0864F053BAFEBF382CC2E716A0E54 /* Pods-MzTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MzTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B3005806A63794A39B816DDE1D4E0F4 /* MzTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MzTableView-dummy.m"; sourceTree = "<group>"; };
+		7D38F163B9B305B34783591A94A57F9E /* Pods-MzTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MzTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89BEE7AC61FF3D55562714A8051634A3 /* MzTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MzTableView-Info.plist"; sourceTree = "<group>"; };
+		91002C574EB430B96186EACA834E5800 /* Pods-MzTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MzTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		963871F2A2EEA360A8B6BC6507ABF897 /* MzTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MzTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8D794F2E21CAA832C4FF5B5BBDB8B52 /* Pods-MzTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MzTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A9A14A90DF9E1F495ACC56AD3F24C331 /* Pods-MzTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MzTableView_Example-umbrella.h"; sourceTree = "<group>"; };
+		B5D442019D5337E7475A5ED7BC6A7D70 /* Pods-MzTableView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MzTableView_Example-Info.plist"; sourceTree = "<group>"; };
+		BAEBCF93642E8D687227F7602D8C8BE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C7F15E01B1E7D87B0795B4B425ACDB65 /* Pods-MzTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MzTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D69AAAB58ECAD648F490F9E9258EDE62 /* Pods_MzTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MzTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C1E8B96690E5570F305ABCD07F1523 /* MzTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MzTableViewDataSource.swift; path = MzTableView/Classes/MzTableViewDataSource.swift; sourceTree = "<group>"; };
+		E90AFD2DCCFC192FC6AE6862236CF679 /* Pods-MzTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MzTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F332DB022451D63200936118 /* MzTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MzTableViewCell.swift; sourceTree = "<group>"; };
+		F37161B12452C891006A501F /* CellAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAnimator.swift; sourceTree = "<group>"; };
+		FDA1A978DDD6F31C5F021A2CA99B4BAE /* Pods_MzTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MzTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58AE82F2157585ECC9343FFBA8F4E9EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF36E0135F4B426A9DA60C3762AF3B79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934D4E175BE34BA3290FD6D63240F039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04753E9426F7616F9A577884690C0F30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDFD48AC03BC0F038418137CF73691B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1FAC7BEA26A7A1E783BEC5690C7B93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DD3DD704087291B3A51303F1EE70EBF /* MzTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F332DB022451D63200936118 /* MzTableViewCell.swift */,
+				E3C1E8B96690E5570F305ABCD07F1523 /* MzTableViewDataSource.swift */,
+				90307BDA74A44D1BFBA194F29C893E5D /* Pod */,
+				90106DE822C2A606F28988C3F5705944 /* Support Files */,
+				F37161B12452C891006A501F /* CellAnimator.swift */,
+			);
+			name = MzTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4B7BA2E5A8D5321ADC0242B7D79EB9CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963871F2A2EEA360A8B6BC6507ABF897 /* MzTableView.framework */,
+				D69AAAB58ECAD648F490F9E9258EDE62 /* Pods_MzTableView_Example.framework */,
+				FDA1A978DDD6F31C5F021A2CA99B4BAE /* Pods_MzTableView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57FF54E662AAE6F290AD4459ED99F4EF /* Pods-MzTableView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3DA6C68A9946AC215DB20528D76B23EA /* Pods-MzTableView_Example.modulemap */,
+				7D38F163B9B305B34783591A94A57F9E /* Pods-MzTableView_Example-acknowledgements.markdown */,
+				40C0112AD57A659FB925AF924B341BAA /* Pods-MzTableView_Example-acknowledgements.plist */,
+				07429B03F46EFC7C28A8B77A3BBAE8B7 /* Pods-MzTableView_Example-dummy.m */,
+				2B98E5F146167DBEA1FFEAB8D1CD8E46 /* Pods-MzTableView_Example-frameworks.sh */,
+				B5D442019D5337E7475A5ED7BC6A7D70 /* Pods-MzTableView_Example-Info.plist */,
+				A9A14A90DF9E1F495ACC56AD3F24C331 /* Pods-MzTableView_Example-umbrella.h */,
+				91002C574EB430B96186EACA834E5800 /* Pods-MzTableView_Example.debug.xcconfig */,
+				40D97DE9B6B7934CC747DEB67DC4DABF /* Pods-MzTableView_Example.release.xcconfig */,
+			);
+			name = "Pods-MzTableView_Example";
+			path = "Target Support Files/Pods-MzTableView_Example";
+			sourceTree = "<group>";
+		};
+		8499DDC2BA1C48353795A873798B3932 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DD3DD704087291B3A51303F1EE70EBF /* MzTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		90106DE822C2A606F28988C3F5705944 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				332444E6ED2797E13AE739698859E192 /* MzTableView.modulemap */,
+				7B3005806A63794A39B816DDE1D4E0F4 /* MzTableView-dummy.m */,
+				89BEE7AC61FF3D55562714A8051634A3 /* MzTableView-Info.plist */,
+				55A3782D841B93B4698F7515DF6C795E /* MzTableView-prefix.pch */,
+				4632C82B8C789D5F8B51E58D975595C4 /* MzTableView-umbrella.h */,
+				21473A4F4D9D38D25C12E0C6BA07C869 /* MzTableView.debug.xcconfig */,
+				1D6F8B4FEFAC501D1B626C0DB2167F98 /* MzTableView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MzTableView";
+			sourceTree = "<group>";
+		};
+		90307BDA74A44D1BFBA194F29C893E5D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BAEBCF93642E8D687227F7602D8C8BE7 /* LICENSE */,
+				010B1A4A2A799C5AB2F3DB82378CDE52 /* MzTableView.podspec */,
+				4DC708B61943B1411E45F4DEB2D9DECD /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB0A6AD69CD1EFB449E59FA348AFB0F0 /* Pods-MzTableView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0E123FFDFEEAA10E625E90CF95FA2F40 /* Pods-MzTableView_Tests.modulemap */,
+				E90AFD2DCCFC192FC6AE6862236CF679 /* Pods-MzTableView_Tests-acknowledgements.markdown */,
+				7AE0864F053BAFEBF382CC2E716A0E54 /* Pods-MzTableView_Tests-acknowledgements.plist */,
+				1E4EB4942296E8FEA5D7F3FF5B36FECA /* Pods-MzTableView_Tests-dummy.m */,
+				5D5EAD1A79BD37BD44729BB8474E96C5 /* Pods-MzTableView_Tests-Info.plist */,
+				A8D794F2E21CAA832C4FF5B5BBDB8B52 /* Pods-MzTableView_Tests-umbrella.h */,
+				C7F15E01B1E7D87B0795B4B425ACDB65 /* Pods-MzTableView_Tests.debug.xcconfig */,
+				4F8DC9BEEBBD4A53E5BA6422B333C4D4 /* Pods-MzTableView_Tests.release.xcconfig */,
+			);
+			name = "Pods-MzTableView_Tests";
+			path = "Target Support Files/Pods-MzTableView_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8499DDC2BA1C48353795A873798B3932 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4B7BA2E5A8D5321ADC0242B7D79EB9CE /* Products */,
+				F03248AF81F5E7DA84BF709D4186CF52 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F03248AF81F5E7DA84BF709D4186CF52 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57FF54E662AAE6F290AD4459ED99F4EF /* Pods-MzTableView_Example */,
+				CB0A6AD69CD1EFB449E59FA348AFB0F0 /* Pods-MzTableView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07EE0F88D13681E3D05AD11D25688573 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F72BA812B98A854E94F10397E044B6 /* Pods-MzTableView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0107B7DC3AEC57703D9B008A2A98B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59CE613867A9B4BCB5DD54281C4880B /* MzTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2468318F19904608273735CD980A8C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F920AD83604C30C5CB8FD8BF4905261A /* Pods-MzTableView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		082E8CAC23997B89CD9447F14716519A /* MzTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC1A5D1A96D419CC2D40B37B34843EE /* Build configuration list for PBXNativeTarget "MzTableView" */;
+			buildPhases = (
+				4AA0107B7DC3AEC57703D9B008A2A98B /* Headers */,
+				C63F2054A97533F5A6437C2D3FE00963 /* Sources */,
+				58AE82F2157585ECC9343FFBA8F4E9EA /* Frameworks */,
+				3D64228F648B6CFD763188FCC3F9D158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MzTableView;
+			productName = MzTableView;
+			productReference = 963871F2A2EEA360A8B6BC6507ABF897 /* MzTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24069801D49A528D3E78E77E7F828C40 /* Pods-MzTableView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7409DE54BEC44F6C3DBD3ED03CE622E7 /* Build configuration list for PBXNativeTarget "Pods-MzTableView_Tests" */;
+			buildPhases = (
+				D2468318F19904608273735CD980A8C8 /* Headers */,
+				2415A72F14B2CE931A18E64C602420FC /* Sources */,
+				FDDFD48AC03BC0F038418137CF73691B /* Frameworks */,
+				DDE05136173F2AC6364E3731F212CF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9972ECFBA2EAB5EB6CA206A174227957 /* PBXTargetDependency */,
+			);
+			name = "Pods-MzTableView_Tests";
+			productName = "Pods-MzTableView_Tests";
+			productReference = FDA1A978DDD6F31C5F021A2CA99B4BAE /* Pods_MzTableView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A4347485FBE7B35A495751682CAEBCB /* Pods-MzTableView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3575EFC23484F7581C9BB2817C42CDB /* Build configuration list for PBXNativeTarget "Pods-MzTableView_Example" */;
+			buildPhases = (
+				07EE0F88D13681E3D05AD11D25688573 /* Headers */,
+				A51B9761C1D2B3B395F0226B9055CD0D /* Sources */,
+				934D4E175BE34BA3290FD6D63240F039 /* Frameworks */,
+				61C9BC68DA35454D90CBAD82F3CFC136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71BAEF8BDCFE87BA47B5023D4E61762D /* PBXTargetDependency */,
+			);
+			name = "Pods-MzTableView_Example";
+			productName = "Pods-MzTableView_Example";
+			productReference = D69AAAB58ECAD648F490F9E9258EDE62 /* Pods_MzTableView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4B7BA2E5A8D5321ADC0242B7D79EB9CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				082E8CAC23997B89CD9447F14716519A /* MzTableView */,
+				6A4347485FBE7B35A495751682CAEBCB /* Pods-MzTableView_Example */,
+				24069801D49A528D3E78E77E7F828C40 /* Pods-MzTableView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D64228F648B6CFD763188FCC3F9D158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C9BC68DA35454D90CBAD82F3CFC136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE05136173F2AC6364E3731F212CF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2415A72F14B2CE931A18E64C602420FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352503DEE4F3FE43B32B8E4DC5934210 /* Pods-MzTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9761C1D2B3B395F0226B9055CD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA176AEAE19A16F1F4AAF8020A8DDA5 /* Pods-MzTableView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63F2054A97533F5A6437C2D3FE00963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37161B22452C891006A501F /* CellAnimator.swift in Sources */,
+				F332DB032451D63200936118 /* MzTableViewCell.swift in Sources */,
+				8F2B179C73B8414EACCFAA81CE910519 /* MzTableView-dummy.m in Sources */,
+				5D62E61E6C0FE0C420CFF256770759BD /* MzTableViewDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71BAEF8BDCFE87BA47B5023D4E61762D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MzTableView;
+			target = 082E8CAC23997B89CD9447F14716519A /* MzTableView */;
+			targetProxy = D9BA18FFC333BC9640A1AF3BDD710F68 /* PBXContainerItemProxy */;
+		};
+		9972ECFBA2EAB5EB6CA206A174227957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MzTableView_Example";
+			target = 6A4347485FBE7B35A495751682CAEBCB /* Pods-MzTableView_Example */;
+			targetProxy = 1250762394A0C9EB8F8E0D60BD1B66B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DB8F750635C0E5F5BDC0499E239D0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D97DE9B6B7934CC747DEB67DC4DABF /* Pods-MzTableView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MzTableView_Example/Pods-MzTableView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MzTableView_Example/Pods-MzTableView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8741E0538A2794C05D255AF681122145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6F8B4FEFAC501D1B626C0DB2167F98 /* MzTableView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MzTableView/MzTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MzTableView/MzTableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MzTableView/MzTableView.modulemap";
+				PRODUCT_MODULE_NAME = MzTableView;
+				PRODUCT_NAME = MzTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C4612405A31E97192411BB8A52014702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91002C574EB430B96186EACA834E5800 /* Pods-MzTableView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MzTableView_Example/Pods-MzTableView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MzTableView_Example/Pods-MzTableView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF739DB047C9029979AC94BC2A127371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F15E01B1E7D87B0795B4B425ACDB65 /* Pods-MzTableView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MzTableView_Tests/Pods-MzTableView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MzTableView_Tests/Pods-MzTableView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9FED45DD2A32BF3DF009EC595B16A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21473A4F4D9D38D25C12E0C6BA07C869 /* MzTableView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MzTableView/MzTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MzTableView/MzTableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MzTableView/MzTableView.modulemap";
+				PRODUCT_MODULE_NAME = MzTableView;
+				PRODUCT_NAME = MzTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7028159C0AF8294EB9394FFAB6B4EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8DC9BEEBBD4A53E5BA6422B333C4D4 /* Pods-MzTableView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MzTableView_Tests/Pods-MzTableView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MzTableView_Tests/Pods-MzTableView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC1A5D1A96D419CC2D40B37B34843EE /* Build configuration list for PBXNativeTarget "MzTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FED45DD2A32BF3DF009EC595B16A61 /* Debug */,
+				8741E0538A2794C05D255AF681122145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7409DE54BEC44F6C3DBD3ED03CE622E7 /* Build configuration list for PBXNativeTarget "Pods-MzTableView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF739DB047C9029979AC94BC2A127371 /* Debug */,
+				E7028159C0AF8294EB9394FFAB6B4EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3575EFC23484F7581C9BB2817C42CDB /* Build configuration list for PBXNativeTarget "Pods-MzTableView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4612405A31E97192411BB8A52014702 /* Debug */,
+				4DB8F750635C0E5F5BDC0499E239D0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
