@@ -22,7 +22,12 @@ public class MzTableViewDataSource<T: MzTableViewCell>: NSObject, UITableViewDat
     /// forGetting selected row
     public var didSelectRowAt: ((Int) -> Void)?
     
-    private var cellAnimation: AnimationType
+    public var cellAnimation: AnimationType
+    
+    public var shouldShowAnimationOncePerCell: Bool = true
+    
+    private var animatedCells: [Int] = []
+    
     
     public init(cellHeight: CGFloat?, tableView: UITableView, items: [T.CellViewModel] = [], animationType: AnimationType = .none) {
         self.cellHeight = cellHeight
@@ -55,9 +60,11 @@ public class MzTableViewDataSource<T: MzTableViewCell>: NSObject, UITableViewDat
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Config Cell
         let cell = cell as! T
-        
         // Animate Cell
-        CellAnimator.animateCellUsing(type: cellAnimation, cell: cell)
+        if animatedCells.contains(indexPath.row) == false && shouldShowAnimationOncePerCell {
+            CellAnimator.animateCellUsing(type: cellAnimation, cell: cell)
+            animatedCells.append(indexPath.row)
+        }
         // Delegate
         willDisplayCell?(indexPath.row,cell)
     }
@@ -96,6 +103,31 @@ public class MzTableViewDataSource<T: MzTableViewCell>: NSObject, UITableViewDat
                 self.tableView.insertRows(at: indexPaths, with: .none)
             }
         }
+    }
+    /// remove multiple items from tableView
+    public func  removeItemFromTableView(row: Int) {
+        guard items.count != 0 else {
+            print("WARNING: YOUR TABLE VIEW IS ALREADY EMPTY")
+            return
+        }
+        guard row >= 0 else {
+            assertionFailure("can't remove item at \(row)")
+            return
+        }
+        // remove from datasource
+        self.items.remove(at: row)
+        let indexPathToRemove = IndexPath(row: row, section: 0)
+        self.tableView.deleteRows(at: [indexPathToRemove], with: .fade)
+    }
+    
+    public func refreshWithNewItems(_ newItems: [T.CellViewModel]) {
+        guard newItems.count != 0 else {
+            print("WARNING: YOU ARE ADDING EMPTY LIST TO TABLE VIEW")
+            return
+        }
+        self.animatedCells.removeAll()
+        self.items = newItems
+        self.tableView.reloadData()
     }
     
 }

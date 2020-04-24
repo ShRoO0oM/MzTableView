@@ -16,8 +16,8 @@
 		9B1FAC7BEA26A7A1E783BEC5690C7B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BF36E0135F4B426A9DA60C3762AF3B79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C59CE613867A9B4BCB5DD54281C4880B /* MzTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4632C82B8C789D5F8B51E58D975595C4 /* MzTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F332DB032451D63200936118 /* MzTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332DB022451D63200936118 /* MzTableViewCell.swift */; };
-		F37161B22452C891006A501F /* CellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37161B12452C891006A501F /* CellAnimator.swift */; };
+		F39E8194245303BE00F5A58A /* MzTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8192245303BE00F5A58A /* MzTableViewCell.swift */; };
+		F39E8195245303BE00F5A58A /* CellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8193245303BE00F5A58A /* CellAnimator.swift */; };
 		F920AD83604C30C5CB8FD8BF4905261A /* Pods-MzTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D794F2E21CAA832C4FF5B5BBDB8B52 /* Pods-MzTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -71,8 +71,8 @@
 		D69AAAB58ECAD648F490F9E9258EDE62 /* Pods_MzTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MzTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C1E8B96690E5570F305ABCD07F1523 /* MzTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MzTableViewDataSource.swift; path = MzTableView/Classes/MzTableViewDataSource.swift; sourceTree = "<group>"; };
 		E90AFD2DCCFC192FC6AE6862236CF679 /* Pods-MzTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MzTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F332DB022451D63200936118 /* MzTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MzTableViewCell.swift; sourceTree = "<group>"; };
-		F37161B12452C891006A501F /* CellAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAnimator.swift; sourceTree = "<group>"; };
+		F39E8192245303BE00F5A58A /* MzTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MzTableViewCell.swift; path = MzTableView/Classes/MzTableViewCell.swift; sourceTree = "<group>"; };
+		F39E8193245303BE00F5A58A /* CellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellAnimator.swift; path = MzTableView/Classes/CellAnimator.swift; sourceTree = "<group>"; };
 		FDA1A978DDD6F31C5F021A2CA99B4BAE /* Pods_MzTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MzTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,11 +107,11 @@
 		2DD3DD704087291B3A51303F1EE70EBF /* MzTableView */ = {
 			isa = PBXGroup;
 			children = (
-				F332DB022451D63200936118 /* MzTableViewCell.swift */,
+				F39E8193245303BE00F5A58A /* CellAnimator.swift */,
+				F39E8192245303BE00F5A58A /* MzTableViewCell.swift */,
 				E3C1E8B96690E5570F305ABCD07F1523 /* MzTableViewDataSource.swift */,
 				90307BDA74A44D1BFBA194F29C893E5D /* Pod */,
 				90106DE822C2A606F28988C3F5705944 /* Support Files */,
-				F37161B12452C891006A501F /* CellAnimator.swift */,
 			);
 			name = MzTableView;
 			path = ../..;
@@ -389,8 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37161B22452C891006A501F /* CellAnimator.swift in Sources */,
-				F332DB032451D63200936118 /* MzTableViewCell.swift in Sources */,
+				F39E8195245303BE00F5A58A /* CellAnimator.swift in Sources */,
+				F39E8194245303BE00F5A58A /* MzTableViewCell.swift in Sources */,
 				8F2B179C73B8414EACCFAA81CE910519 /* MzTableView-dummy.m in Sources */,
 				5D62E61E6C0FE0C420CFF256770759BD /* MzTableViewDataSource.swift in Sources */,
 			);

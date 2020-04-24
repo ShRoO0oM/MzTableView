@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EEb-rr-aYf">
-                        <rect key="frame" x="16" y="0.0" width="362" height="62"/>
+                        <rect key="frame" x="16" y="4" width="362" height="54"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,12 +32,12 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="EEb-rr-aYf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jkn-iS-FM4"/>
+                    <constraint firstItem="EEb-rr-aYf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Jkn-iS-FM4"/>
                     <constraint firstItem="EEb-rr-aYf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LIV-qD-E2U"/>
                     <constraint firstItem="vlf-Rg-bMe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MHx-l3-6de"/>
                     <constraint firstAttribute="trailing" secondItem="EEb-rr-aYf" secondAttribute="trailing" constant="16" id="cRd-kt-agH"/>
                     <constraint firstAttribute="bottom" secondItem="vlf-Rg-bMe" secondAttribute="bottom" id="lCo-yb-97H"/>
-                    <constraint firstItem="vlf-Rg-bMe" firstAttribute="top" secondItem="EEb-rr-aYf" secondAttribute="bottom" id="tB8-9C-ML5"/>
+                    <constraint firstItem="vlf-Rg-bMe" firstAttribute="top" secondItem="EEb-rr-aYf" secondAttribute="bottom" constant="4" id="tB8-9C-ML5"/>
                     <constraint firstAttribute="trailing" secondItem="vlf-Rg-bMe" secondAttribute="trailing" id="zjP-og-yFH"/>
                 </constraints>
             </tableViewCellContentView>
