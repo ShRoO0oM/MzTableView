@@ -50,7 +50,7 @@ class ExampleViewController: UIViewController {
     }
     
     func refreshTableView() {
-        let randomNum = Int.random(in: 2...9)
+        let randomNum = Int.random(in: 2...6)
         var strings = [String]()
         for _ in 0...randomNum {
             strings.append(randomString(length: Int.random(in: 0...200)))

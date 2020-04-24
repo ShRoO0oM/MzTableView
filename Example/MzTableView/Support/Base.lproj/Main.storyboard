@@ -24,10 +24,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oeE-f7-k4b">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <rect key="frame" x="8" y="607" width="359" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSW-tq-QI1">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="aaz-n8-RD0"/>
                                         </constraints>
@@ -37,17 +37,17 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o7-pq-a5F">
-                                        <rect key="frame" x="125" y="0.0" width="125" height="60"/>
+                                        <rect key="frame" x="119.5" y="0.0" width="120" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="cbK-Pk-CI3"/>
                                         </constraints>
-                                        <state key="normal" title="Add New Cells"/>
+                                        <state key="normal" title="Add New Cell"/>
                                         <connections>
                                             <action selector="addNewItem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X3a-m0-Zm2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1V-fM-Hxn">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="60"/>
+                                        <rect key="frame" x="239.5" y="0.0" width="119.5" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="tWh-DB-IJ2"/>
                                         </constraints>
@@ -62,10 +62,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oeE-f7-k4b" firstAttribute="top" secondItem="QNS-Ts-hWD" secondAttribute="bottom" id="6Jp-il-GCu"/>
-                            <constraint firstAttribute="trailing" secondItem="oeE-f7-k4b" secondAttribute="trailing" id="9f9-Bu-hAP"/>
+                            <constraint firstAttribute="trailing" secondItem="oeE-f7-k4b" secondAttribute="trailing" constant="8" id="9f9-Bu-hAP"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oeE-f7-k4b" secondAttribute="bottom" id="9jm-J8-7tO"/>
                             <constraint firstItem="QNS-Ts-hWD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="BZZ-2f-4Gv"/>
-                            <constraint firstItem="oeE-f7-k4b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qNi-4S-nRZ"/>
+                            <constraint firstItem="oeE-f7-k4b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="qNi-4S-nRZ"/>
                             <constraint firstAttribute="trailing" secondItem="QNS-Ts-hWD" secondAttribute="trailing" id="uhq-7y-Gq9"/>
                             <constraint firstItem="QNS-Ts-hWD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="wdI-Ch-5FQ"/>
                         </constraints>
