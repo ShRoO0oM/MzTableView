@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MzTableView'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'Fast & Easy UITableView implementation for single type cell TableView.'
 
 # This description is used to generate tags and improve search results.
@@ -16,11 +16,8 @@ Pod::Spec.new do |s|
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+                       
+  s.swift_version = '5.0'
   s.homepage         = 'https://github.com/mohammadz74/MzTableView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mohammadz74' => 'mohammad_z74@icloud.com' }
