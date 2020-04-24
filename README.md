@@ -80,8 +80,8 @@ public init(cellHeight: CGFloat?, tableView: UITableView, items: [T.CellViewMode
 then assign the object to your tableView dataSource and delegate.
 
 ```swift
-     self.exampleTableView.dataSource = mzDataSource
-     self.exampleTableView.delegate = mzDataSource
+self.exampleTableView.dataSource = mzDataSource
+self.exampleTableView.delegate = mzDataSource
 ```
 for adding data to your tableView just use:
 ```swift
@@ -98,6 +98,21 @@ mZdataSource.removeItemFromTableView(row: rowToDelete)
 Or you may refresh all of your tableView with new data:
 ```swift
 mZdataSource.refreshWithNewItems(items)
+```
+
+for getting selected cell you can use `didSelectRowAt` closure which is property of mZdataSource.
+
+```swift
+ mZdataSource.didSelectRowAt = { [weak self] index in
+     print(index)
+ }
+```
+You can also have nice animations too, just pass the animationType when you are creating the dataSource object with your desired duration. 
+If you want use your custom animations just read the cell from:
+```
+mZdataSource.willDisplayCell = { [weak self] (index,cell) in
+       // animate your cell
+ }
 ```
 
 If the usage guide wasn't useful,please run and look the example project.It will boost you 😇.
