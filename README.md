@@ -15,6 +15,7 @@ For feeding your UITableView you don't need cellForRowAt numberOfRowsInSections 
 Your tableView should match the below requirements otherwise MzTableView is not going to work for you :(
 - Your tableView contains one type of cell
 - Your tableView contains one section
+
 Which 90% of tableView designs meet the requirements!
 
 ## Example
@@ -71,10 +72,10 @@ then in your UIViewController you should create MzTableViewDataSource object:
 ```swift
 public init(cellHeight: CGFloat?, tableView: UITableView, items: [T.CellViewModel] = [], animationType: AnimationType = .none
 ```
-which `cellHeight` is the tableView cell height ( return 0 or nil for self sizing cells)
-`tableView` is the ViewController UITableView.
-`items` is the initial items of your tableView ( you can put empty array then append to it later as shown below.)
-`animationType` is an optional enum if you want animation for your cells (.none is default)
+- `cellHeight` is the tableView cell height ( return 0 or nil for self sizing cells)
+- `tableView` is the ViewController's UITableView.
+- `items` is the initial items of your tableView ( you can put empty array then append to it later as shown below.)
+- `animationType` is an optional enum if you want animation for your cells (.none is default)
 
 then assign the object to your tableView dataSource and delegate.
 
