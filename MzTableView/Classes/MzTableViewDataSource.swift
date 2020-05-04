@@ -121,14 +121,14 @@ public class MzTableViewDataSource<T: MzTableViewCell>: NSObject, UITableViewDat
     }
     
     public func refreshWithNewItems(_ newItems: [T.CellViewModel]) {
-        guard newItems.count != 0 else {
-            print("WARNING: YOU ARE ADDING EMPTY LIST TO TABLE VIEW")
-            return
-        }
         self.animatedCells.removeAll()
         self.items = newItems
         self.tableView.reloadData()
     }
     
+    public func reloadIndexPathsAt(_ indexPaths: [Int]) {
+        let indexPaths = indexPaths.map {IndexPath(row: $0, section: 0)}
+        self.tableView.reloadRows(at: indexPaths, with: .automatic)
+    }
 }
 
